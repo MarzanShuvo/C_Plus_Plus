@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/bin_main.dir/main.cpp.o  -o bin_main -Wl,-rpath,"/media/marzan/data storage/C++/Modern C++/code_example/cmake_list/build/src" libhello.so libblah.so 

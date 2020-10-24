@@ -1,0 +1,7 @@
+/media/marzan/data storage/C++/Modern C++/code_example/cmake_list/build/CMakeFiles/rebuild_cache.dir
+/media/marzan/data storage/C++/Modern C++/code_example/cmake_list/build/CMakeFiles/edit_cache.dir
+/media/marzan/data storage/C++/Modern C++/code_example/cmake_list/build/src/CMakeFiles/rebuild_cache.dir
+/media/marzan/data storage/C++/Modern C++/code_example/cmake_list/build/src/CMakeFiles/edit_cache.dir
+/media/marzan/data storage/C++/Modern C++/code_example/cmake_list/build/src/CMakeFiles/hello.dir
+/media/marzan/data storage/C++/Modern C++/code_example/cmake_list/build/src/CMakeFiles/bin_main.dir
+/media/marzan/data storage/C++/Modern C++/code_example/cmake_list/build/src/CMakeFiles/blah.dir

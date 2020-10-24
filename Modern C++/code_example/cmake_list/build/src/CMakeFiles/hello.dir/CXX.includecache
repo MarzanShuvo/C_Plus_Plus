@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/marzan/data storage/C++/Modern C++/code_example/cmake_list/src/./hello.h
+iostream
+-
+
+/media/marzan/data storage/C++/Modern C++/code_example/cmake_list/src/hello.cpp
+./hello.h
+/media/marzan/data storage/C++/Modern C++/code_example/cmake_list/src/./hello.h
+
