@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/test_blah.dir/test_blah.cpp.o  -o test_blah -Wl,-rpath,"/media/marzan/data storage/C++/Modern C++/code_example/cmake_list/build/src" ../src/libblah.so ../gtest/libgtest.a ../gtest/libgtest_main.a ../gtest/libgtest.a -lpthread 

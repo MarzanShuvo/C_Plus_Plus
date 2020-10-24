@@ -5,6 +5,5 @@
 int main()
 {
     PrintHello();
-    PrintBlah();
     return 0;
 }
