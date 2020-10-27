@@ -70,5 +70,22 @@ namespace igg {
           return histogram;
 
     }
+
+    void Image::DownScale(int scale){
+        int row_down = rows_/scale;
+        int col_down = cols_/scale;
+        std::vector<int> downScaledImage;
+        downScaledImage.reserve(row_down*col_down);
+        for(int i=0; i<rows_; i+=scale){
+            for(int j=0; j<cols_; j+=scale){
+                downScaledImage.emplace_back(data_[i*cols_+j]);
+            }
+        }
+
+        rows_ = row_down;
+        cols_ = col_down;
+        data_ = downScaledImage;
+
+    }
 }
 

@@ -5,7 +5,8 @@
 
 int main() {
     std::string file_name = "/media/marzan/data storage/C++/Modern C++/assignment1_from_Bonn/igg_image/data/lena.ascii.pgm";
-    
+    std::string file_name_down = "/media/marzan/data storage/C++/Modern C++/assignment1_from_Bonn/igg_image/data/lena_downscaled.ascii.pgm";
+
     std::cout<<file_name<<std::endl;
     
     igg::Image image(50, 50);
@@ -18,9 +19,9 @@ int main() {
         std::cout<<"Image is found"<<std::endl;
     }
 
-    std::cout<<"Image's Row"<< image.rows()<<std::endl;
-    std::cout<<"Image's column"<< image.cols()<<std::endl;
-    std::cout<<"Image at 1,2:"<< image.at(1,2)<<std::endl;
+    std::cout<<"Image's Row: "<< image.rows()<<std::endl;
+    std::cout<<"Image's column: "<< image.cols()<<std::endl;
+    std::cout<<"Image at 1,2: "<< image.at(1,2)<<std::endl;
 
     auto histograms =image.ComputeHistogram(4);
 
@@ -28,6 +29,12 @@ int main() {
     for(unsigned i=0; i<histograms.size(); i++){
         std::cout<<"histogram Bin["<<i<<"]:"<<histograms[i]<<std::endl;
     }
+    
+    std::cout<<"image is downscaled by 4"<<std::endl;
+    image.DownScale(4);
+
+    image.WriteToPgm(file_name_down);
+
 
     
     
