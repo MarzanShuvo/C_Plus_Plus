@@ -20,14 +20,16 @@ int main() {
 
     std::cout<<"Image's Row"<< image.rows()<<std::endl;
     std::cout<<"Image's column"<< image.cols()<<std::endl;
-    std::cout<<"Image at 1,2"<< image.at(1,2)<<std::endl;
+    std::cout<<"Image at 1,2:"<< image.at(1,2)<<std::endl;
 
     auto histograms =image.ComputeHistogram(4);
 
-    for(auto i=histograms.begin(); i !=histograms.end();++i){
-        std::cout<<histograms.size()<<std::endl;
-        std::cout<<*i<<std::endl;
+    std::cout<<"Histogram size:"<<histograms.size()<<std::endl;
+    for(unsigned i=0; i<histograms.size(); i++){
+        std::cout<<"histogram Bin["<<i<<"]:"<<histograms[i]<<std::endl;
     }
+
+    
     
 
     

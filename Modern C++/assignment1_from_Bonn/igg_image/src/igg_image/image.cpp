@@ -55,11 +55,10 @@ namespace igg {
 
     std::vector<float> Image::ComputeHistogram(int bins) const {
           int total_size = cols_*rows_;
-          std::vector<float> histogram;
-          histogram.reserve(bins);
+          std::vector<float> histogram(bins,0);
 
-          int span = max_val_/bins;
-          for(auto value: histogram){
+          int span = 255/bins;
+          for(auto value: data_){
               int index = value/span;
               histogram[index] = histogram[index]+1;
           }
