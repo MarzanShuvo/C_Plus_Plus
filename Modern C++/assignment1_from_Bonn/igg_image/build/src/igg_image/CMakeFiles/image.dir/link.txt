@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -Wall -Wextra -fPIC -O3  -shared -Wl,-soname,libimage.so -o ../../../lib/libimage.so CMakeFiles/image.dir/image.cpp.o -Wl,-rpath,"/media/marzan/data storage/C++/Modern C++/assignment1_from_Bonn/igg_image/lib" ../../../lib/libio_tools.so 

@@ -26,6 +26,7 @@ namespace igg {
          io_tools::ImageData image = io_tools::ReadFromPgm(file_name);
 
          if(image.data.empty()){
+             std::cout<<"file is not found"<<std::endl;
              return false;
          }
 

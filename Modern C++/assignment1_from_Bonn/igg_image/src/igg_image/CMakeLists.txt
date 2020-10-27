@@ -10,3 +10,6 @@ find_library(
 add_library(image SHARED image.cpp)
 target_link_libraries(image ${tools})
 
+add_executable(main.o main.cpp)
+target_link_libraries(main.o image)
+
