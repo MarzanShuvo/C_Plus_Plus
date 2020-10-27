@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/marzan/data storage/C++/Modern C++/assignment1_from_Bonn/igg_image/src/igg_image/./image.h
+vector
+-
+string
+-
+./io_tools.h
+/media/marzan/data storage/C++/Modern C++/assignment1_from_Bonn/igg_image/src/igg_image/././io_tools.h
+
+/media/marzan/data storage/C++/Modern C++/assignment1_from_Bonn/igg_image/src/igg_image/./io_tools.h
+fstream
+-
+string
+-
+vector
+-
+
+/media/marzan/data storage/C++/Modern C++/assignment1_from_Bonn/igg_image/src/igg_image/image.cpp
+./image.h
+/media/marzan/data storage/C++/Modern C++/assignment1_from_Bonn/igg_image/src/igg_image/./image.h
+./io_tools.h
+/media/marzan/data storage/C++/Modern C++/assignment1_from_Bonn/igg_image/src/igg_image/./io_tools.h
+iostream
+-
+

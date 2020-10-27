@@ -1,0 +1,29 @@
+#include <iostream>
+using std::cout;
+using std::endl;
+
+class Blah{
+    public:
+        void SomeFunc() {cout<< "none const" << endl;}
+        //void SomeFunc() const {cout<< "const" << endl;}
+};
+
+int main()
+{
+    Blah blah;
+    blah.SomeFunc();
+
+    const Blah& blah_ref = blah;
+    blah_ref.SomeFunc();
+    return 0;
+}
+
+error:
+
+classes.cpp: In function ‘int main()’:
+classes.cpp:17:23: error: passing ‘const Blah’ as ‘this’ argument discards qualifiers [-fpermissive]
+     blah_ref.SomeFunc();
+                       ^
+classes.cpp:7:14: note:   in call to ‘void Blah::SomeFunc()’
+         void SomeFunc() {cout<< "none const" << endl;}
+              ^~~~~~~~

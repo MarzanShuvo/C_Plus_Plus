@@ -1,0 +1,2 @@
+/usr/bin/ar qc "/media/marzan/data storage/C++/Modern C++/assignment1_from_Bonn/igg_image/lib/libgtest.a"  CMakeFiles/gtest.dir/src/gtest-all.cc.o
+/usr/bin/ranlib "/media/marzan/data storage/C++/Modern C++/assignment1_from_Bonn/igg_image/lib/libgtest.a"
