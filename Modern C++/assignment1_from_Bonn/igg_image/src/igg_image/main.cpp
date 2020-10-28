@@ -22,7 +22,8 @@ int main() {
     std::cout<<"-------------------------------------------------------------"<<std::endl;
     std::cout<<"Image's Row: "<< image.rows()<<std::endl;
     std::cout<<"Image's column: "<< image.cols()<<std::endl;
-    std::cout<<"Image at 1,2: "<< image.at(1,2)<<std::endl;
+    int val = image.at(1,2);
+    std::cout<<"Image at 1,2: "<< val<<std::endl;
     std::cout<<"-------------------------------------------------------------"<<std::endl;
     auto histograms =image.ComputeHistogram(4);
 
@@ -30,11 +31,11 @@ int main() {
     for(unsigned i=0; i<histograms.size(); i++){
         std::cout<<"histogram Bin["<<i<<"]:"<<histograms[i]<<std::endl;
     }
-    //std::cout<<"------------------------------------------------------------"<<std::endl;
-    //std::cout<<"image is downscaled by 4"<<std::endl;
-    //image.DownScale(4);
+    std::cout<<"------------------------------------------------------------"<<std::endl;
+    std::cout<<"image is downscaled by 4"<<std::endl;
+    image.DownScale(4);
 
-    //image.WriteToPgm(file_name_down);
+    image.WriteToPgm(file_name_down);
     std::cout<<"------------------------------------------------------------"<<std::endl;
     std::cout<<"image is upscaled by 2"<<std::endl;
     image.UpScale(2);

@@ -15,7 +15,7 @@ namespace igg {
     int Image::cols() const {return cols_;}
 
     int& Image::at(int row, int col){
-        return data_.at(row*col+col);
+        return data_[row*col+col];
     }
 
     const int& Image::at(int row, int col) const {
