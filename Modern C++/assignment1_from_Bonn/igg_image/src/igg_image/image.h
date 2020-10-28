@@ -19,6 +19,7 @@ class Image {
   void WriteToPgm(const std::string& file_name);
   std::vector<float> ComputeHistogram(int bins) const;
   void DownScale(int scale);
+  void UpScale(int scale);
  private:
   int rows_ = 0;
   int cols_ = 0;

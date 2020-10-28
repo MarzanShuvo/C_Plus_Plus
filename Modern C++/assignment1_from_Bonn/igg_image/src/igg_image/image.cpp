@@ -45,10 +45,10 @@ namespace igg {
         image.max_val = max_val_;
 
         if(io_tools::WriteToPgm(image,file_name)){
-            std::cout<<"Succesful to"<<file_name<<std::endl;
+            std::cout<<"Succesfully writted to"<<file_name<<std::endl;
         }
         else{
-            std::cout<<"Failed to"<<file_name<<std::endl;
+            std::cout<<"Failed to write"<<file_name<<std::endl;
         }
         
     }
@@ -85,6 +85,30 @@ namespace igg {
         rows_ = row_down;
         cols_ = col_down;
         data_ = downScaledImage;
+
+    }
+
+    void Image::UpScale(int scale){
+        int up_row = rows_*scale;
+        int up_col = cols_*scale;
+        std::vector<int>upScaledImage(up_row*up_col,0);
+        // Iterate over the image
+	    for (int i = 0; i < rows_; i++) {
+	        int row_jump = i * scale;
+	        for (int j = 0; j < cols_; j++) {
+	            int col_jump = j*scale;
+	            // Fill values for upscaled image
+	            for (int u = 0; u < scale; u++) {
+	                for (int v = 0; v < scale; v++) {
+	                    upScaledImage[(row_jump+u)*up_col + col_jump + v] = data_[i*cols_ + j];
+	                }
+	            }
+	        }
+	    }
+
+        rows_ = up_row;
+        cols_ = up_col;
+        data_ = upScaledImage;
 
     }
 }
