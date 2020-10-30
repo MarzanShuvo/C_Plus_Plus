@@ -6,7 +6,8 @@
 
 #include <vector>
 #include "io_strategies/strategy.h"
-#include "io_strategies/dummy_strategy.h"
+//#include "io_strategies/dummy_strategy.h"
+//#include "io_strategies/png_strategy.h"
 
 namespace igg {
 
@@ -25,12 +26,15 @@ class Image {
   int rows() const;
   int cols() const;
   //i have faced problem to call it in image.cpp//It is showing error//I was unable to resolve that error
+  //so i implemented it here
   //"--------------------------->
   const Pixel& at(int row, int col) const {return data_[row * cols_ + col];}
   Pixel& at(int row, int col) {return data_[row * cols_ + col];}
   //<------------------------------------special type error"
   void DownScale(int scale);
   void UpScale(int scale);
+  bool ReadFromDisk(const std::string& file_name);
+  void WriteToDisk(const std::string& file_name);
 
  private:
 
