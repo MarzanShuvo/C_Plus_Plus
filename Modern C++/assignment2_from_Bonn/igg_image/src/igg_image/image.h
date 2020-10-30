@@ -22,6 +22,15 @@ class Image {
   // TODO: fill public interface.
   Image(const IoStrategy& io_strategy);
   Image(int rows, int cols, const IoStrategy& io_strategy);
+  int rows() const;
+  int cols() const;
+  //i have faced problem to call it in image.cpp//It is showing error//I was unable to resolve that error
+  //"--------------------------->
+  const Pixel& at(int row, int col) const {return data_[row * cols_ + col];}
+  Pixel& at(int row, int col) {return data_[row * cols_ + col];}
+  //<------------------------------------special type error"
+  void DownScale(int scale);
+  void UpScale(int scale);
 
  private:
 
