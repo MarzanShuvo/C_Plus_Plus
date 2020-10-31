@@ -1,6 +1,8 @@
 #pragma once
 
 #include<string>
+#include<sstream>
+#include<fstream>
 #include "igg_image/io_strategies/strategy.h"
 
 namespace igg{
