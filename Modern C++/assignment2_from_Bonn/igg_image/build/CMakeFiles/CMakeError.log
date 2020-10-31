@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /media/marzan/data storage/C++/Modern C++/assignment2_from_Bonn/igg_image/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dc6fe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dc6fe.dir/build.make CMakeFiles/cmTC_dc6fe.dir/build
+make[1]: Entering directory '/media/marzan/data storage/C++/Modern C++/assignment2_from_Bonn/igg_image/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dc6fe.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_dc6fe.dir/CheckSymbolExists.c.o   -c "/media/marzan/data storage/C++/Modern C++/assignment2_from_Bonn/igg_image/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_dc6fe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc6fe.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_dc6fe.dir/CheckSymbolExists.c.o  -o cmTC_dc6fe 
+CMakeFiles/cmTC_dc6fe.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_dc6fe.dir/build.make:97: recipe for target 'cmTC_dc6fe' failed
+make[1]: *** [cmTC_dc6fe] Error 1
+make[1]: Leaving directory '/media/marzan/data storage/C++/Modern C++/assignment2_from_Bonn/igg_image/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_dc6fe/fast' failed
+make: *** [cmTC_dc6fe/fast] Error 2
+
+File /media/marzan/data storage/C++/Modern C++/assignment2_from_Bonn/igg_image/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /media/marzan/data storage/C++/Modern C++/assignment2_from_Bonn/igg_image/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bcf1f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bcf1f.dir/build.make CMakeFiles/cmTC_bcf1f.dir/build
+make[1]: Entering directory '/media/marzan/data storage/C++/Modern C++/assignment2_from_Bonn/igg_image/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bcf1f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_bcf1f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bcf1f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bcf1f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_bcf1f.dir/CheckFunctionExists.c.o  -o cmTC_bcf1f -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_bcf1f.dir/build.make:97: recipe for target 'cmTC_bcf1f' failed
+make[1]: *** [cmTC_bcf1f] Error 1
+make[1]: Leaving directory '/media/marzan/data storage/C++/Modern C++/assignment2_from_Bonn/igg_image/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_bcf1f/fast' failed
+make: *** [cmTC_bcf1f/fast] Error 2
+
+

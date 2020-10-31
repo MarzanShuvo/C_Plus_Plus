@@ -1,0 +1,50 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/igg_image/image.h
+vector
+-
+io_strategies/strategy.h
+../src/igg_image/io_strategies/strategy.h
+
+../src/igg_image/io_strategies/png_strategy.h
+string
+-
+png++/png.hpp
+-
+igg_image/io_strategies/strategy.h
+../src/igg_image/io_strategies/igg_image/io_strategies/strategy.h
+
+../src/igg_image/io_strategies/ppm_strategy.h
+string
+-
+sstream
+-
+fstream
+-
+igg_image/io_strategies/strategy.h
+../src/igg_image/io_strategies/igg_image/io_strategies/strategy.h
+
+../src/igg_image/io_strategies/strategy.h
+string
+-
+vector
+-
+
+/media/marzan/data storage/C++/Modern C++/assignment2_from_Bonn/igg_image/src/igg_image/main.cpp
+igg_image/image.h
+/media/marzan/data storage/C++/Modern C++/assignment2_from_Bonn/igg_image/src/igg_image/igg_image/image.h
+igg_image/io_strategies/png_strategy.h
+/media/marzan/data storage/C++/Modern C++/assignment2_from_Bonn/igg_image/src/igg_image/igg_image/io_strategies/png_strategy.h
+igg_image/io_strategies/ppm_strategy.h
+/media/marzan/data storage/C++/Modern C++/assignment2_from_Bonn/igg_image/src/igg_image/igg_image/io_strategies/ppm_strategy.h
+string
+-
+iostream
+-
+

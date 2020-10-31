@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -fPIC -O3  -rdynamic CMakeFiles/color_image_test.dir/test_init.cpp.o  -o ../../bin/color_image_test ../../lib/libimage.a ../../lib/libstrategies.a ../../lib/libgtest.a ../../lib/libgtest_main.a -lpng ../../lib/libgtest.a -lpthread 
