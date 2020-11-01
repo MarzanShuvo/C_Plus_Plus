@@ -20,8 +20,8 @@ class Point {
         int x_ = 0; int y_ = 0;
 };
 int main () {
-Point a(2, 2), b(1, 1);
-cout << "Dist is (static function) " << Point :: dist(a, b) << endl;
-cout << "Dist is (object function)" << a.Distance(b) << endl;
-return 0;
+    Point a(2, 2), b(1, 1);
+    cout << "Dist is (static function) " << Point :: dist(a, b) << endl;
+    cout << "Dist is (object function)" << a.Distance(b) << endl;
+    return 0;
 }
