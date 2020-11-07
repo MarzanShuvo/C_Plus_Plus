@@ -1,0 +1,3 @@
+namespace digit{
+    bool ReturnType();
+}
