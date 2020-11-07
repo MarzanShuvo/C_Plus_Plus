@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -fPIC -O3  -rdynamic CMakeFiles/first_digit_test.dir/test.cpp.o  -o ../../bin/first_digit_test ../../lib/libdigit_count.a ../../lib/libgtest.a ../../lib/libgtest_main.a ../../lib/libgtest.a -lpthread 
