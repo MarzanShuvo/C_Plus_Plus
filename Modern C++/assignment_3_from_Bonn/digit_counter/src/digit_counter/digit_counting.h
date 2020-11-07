@@ -1,3 +1,3 @@
 namespace digit{
-    bool ReturnType();
+    double Warp(double number, double factor);
 }

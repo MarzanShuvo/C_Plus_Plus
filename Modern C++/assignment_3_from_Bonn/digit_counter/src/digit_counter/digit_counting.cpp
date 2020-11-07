@@ -1,7 +1,10 @@
 #include"./digit_counting.h"
 
 namespace digit{
-    bool ReturnType(){
-        return true;
+    double Warp(double number, double factor){
+        number = number + factor;
+        number = number - factor;
+        return number;
     }
+    
 }
